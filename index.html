@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manas - Devloper Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Code+Pro:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 55px;
+            background-color: rgb(80, 152, 177);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(13, 234, 241);
+            font-size: 1.1rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            font-size: 40px;
+
+        }
+
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .buttons :hover{
+            background-color: rgb(72, 68, 103);
+            font-size: 2.1rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(125, 59, 187);
+        }
+
+        .text-grey{
+            font-size: 15px;
+            color: gray;
+        }
+
+        #element {
+            color: orangered;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box{
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .verticle{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 6vw;
+        }
+
+        .image-top{
+            width: 30px;
+            position: relative;
+            top: -50px;
+            left: -9px;
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 80px;
+            width: 150px;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        footer{
+            background-color: #1a0e1a;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .certificate img{
+            width: 948px;
+            height: 692px;
+        }
+
+        .certificate h1{
+            color: rgb(94, 189, 206);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .copyright{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(43, 88, 128);
+        }
+
+        /* chat gpt code of social media buttions */
+
+        .social-container {
+            text-align: center; /* Center-align the buttons horizontally */
+        }
+
+        .social-button {
+            display: inline-block;
+            margin-right: 10px;
+            transition: transform 0.2s; /* Add a smooth transition effect */
+        }
+
+        .social-button a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .social-button:hover {
+            transform: scale(1.1); /* Increase button size on hover */
+        }
+
+        /* .facebook {
+            background-color: #1877f2;
+        }
+
+        .instagram {
+            background-color: #e4405f;
+        }
+
+        .twitter {
+            background-color: #1da1f2;
+        }
+
+        .github {
+            background-color: #333;
+        } */
+
+        .social-button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        @media screen and (max-width: 900px){
+            body {
+                background-color: red;
+            }
+
+            nav {
+                width: 1000px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div .certificate img {
+                display: flex;
+                flex-direction: column;
+                height: 50px;
+
+            }
+
+            
+        }
+
+        @media screen and (max-width: 1000px){
+            .footer{
+                display: none;
+            }
+
+            nav {
+                height: 100px;
+            }
+        }
+
+        @media screen and (max-width: 1400px) {
+
+          .box{
+            flex-direction: column;
+          }
+
+          .secondSection .verticle {
+            height: unset;
+          }
+
+          .vertical-title, .vertical-desc{
+            left: 45px;
+          }
+
+          .secondSection .box {
+            width: 50vw;
+          }
+
+          nav{
+            flex-direction: column;
+          }
+
+          .footer{
+            display: none;
+          }
+
+          .firstSection {
+            flex-direction: column-reverse;
+          }
+
+          .leftSection{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+
+          .rightSection{
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+          }
+
+          .rightSection img{
+            width: 45vw;
+            margin-bottom: 73px;
+          }
+
+          .image-top{
+            top: 133px;
+          }
+
+          .secondSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Manas Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                    <li><a href="https://manaskulkarni.site/">Visite my Second website</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi I am <span class="purple">Manas</span></div>
+                <div>And I am passionate</div>
+                <div>Web Devloper</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="manas kulkarni cv.pdf" target="_blank">
+                    <button class="btn">Download Resume</button></a>
+
+                    <a href="https://github.com/mdkulkarni2005" target="_blank">
+                    <button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img style="height: 818px; width: 772px; " src="model_bw-removebg-preview.jpg" alt="">
+            </div>
+        </section>
+
+
+        <section class="secondSection">
+            <span class="text-grey"> What I have done so far</span>
+            <h1>My Skills</h1>
+
+            <div class="box">
+                <div class="verticle">
+                    <img class="image-top" src="html logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        I am Learn HTML on Youtube I am make lot of project Using This Language.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="python.png" alt="">
+                    <div class="vertical-title">
+                        Python (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Python Is the First Language learn. This Language is also I learn on Youtube I am make lot of programs using this language like AI assistent and many more.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="java.png" alt="">
+                    <div class="vertical-title">
+                        Java (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        JAVA I learn resentely on Apan colloge coure alpha. I also learn Data Structure and Algorathems on this language.
+                    </div>
+                </div>
+                <div  class="verticle">
+                    <img class="image-top" src="csss.png" alt="">
+                    <div class="vertical-title">
+                        CSS (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        CSS I learn side by side when I learn HTML. I am used CSS lot of website.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="java script.png" alt="">
+                    <div class="vertical-title">
+                        Java Script (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Java Script I learn when I learn HTML, CSS. But I am not make any project using Java Script.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="certificate">
+            <h1>This Are Some Certificates</h1>
+            <img src="MANAS KULKARNI data science certificate-1.png" alt="Data Science Certificate">
+            <img src="MANAS KULKARNI html certificate-1.png" alt="HTML Certificate">
+            <img src="MANAS KULKARNI java cerficate-1.png" alt="JAVA Certificate">
+            <img src="MANAS KULKARNI java certificate-1.png" alt="JAVA certificate">
+            <img src="MANAS KULKARNI java script certificate-1.png" alt="JAVA Script Certificate">
+            <img src="MANAS KULKARNI oops in java-1.png" alt="Object Orented Programming java">
+        </div>
+        <footer>
+            <p  class="copyright">Copyright © <!-- -->2023<!-- --> Manas Kulkarni<!-- -->
+                <div class="social-container">
+                    <div class="social-button facebook">
+                        <a href="https://www.facebook.com/manas.kulkarni.121">
+                            <img src="facebook-logo.jfif" alt="Facebook Logo">
+                            Facebook
+                        </a>
+                    </div>
+                    <div class="social-button instagram">
+                        <a href="https://www.instagram.com/mdkulkarni20/">
+                            <img src="instagram-logo.jfif" alt="Instagram Logo">
+                            Instagram
+                        </a>
+                    </div>
+                    <div class="social-button twitter">
+                        <a href="https://twitter.com/mdkulkarni20">
+                            <img src="twitter-logo.png" alt="Twitter Logo">
+                            Twitter
+                        </a>
+                    </div>
+                    <div class="social-button github">
+                        <a href="https://github.com/mdkulkarni2005">
+                            <img src="github-logo.png" alt="GitHub Logo">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </p>
+            
+        </footer>
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hi','My Name Is Manas', 'And I Am ', 'Web Developer', 'Graphic Designer.', 'Python Developer', 'Java Expert'],
+            typeSpeed: 50, 
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manas - Devloper Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Code+Pro:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(80, 152, 177);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(13, 234, 241);
+            font-size: 1.1rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            font-size: 40px;
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .buttons :hover {
+            background-color: rgb(72, 68, 103);
+            font-size: 2.1rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(125, 59, 187);
+        }
+
+        .text-grey {
+            font-size: 15px;
+            color: gray;
+        }
+
+        #element {
+            color: orangered;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .verticle {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 6vw;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -50px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 80px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: #1a0e1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .certificate img {
+            width: 948px;
+            height: 692px;
+        }
+
+        .certificate h1 {
+            color: rgb(94, 189, 206);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .copyright {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(43, 88, 128);
+        }
+
+        /* chat gpt code */
+
+        /* Reset some default styles for consistency */
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgb(80, 152, 177);
+            color: #fff;
+            text-align: center;
+            height: 50px;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Style the Projects section */
+        #projects {
+            padding: 40px;
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 24px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .project-card img {
+            max-width: 100%;
+        }
+
+        /* Style the GitHub button */
+        .github-button {
+            margin-top: 20px;
+        }
+
+        .github-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .github-button a:hover {
+            background-color: #555;
+        }
+
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+
+        @media screen and (max-width: 1000px) {
+            .footer {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1400px) {
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .verticle {
+                height: unset;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+            .secondSection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .footer {
+                display: none;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .leftSection {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .rightSection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .rightSection img {
+                width: 45vw;
+                margin-bottom: 73px;
+            }
+
+            .image-top {
+                top: 133px;
+            }
+
+            .secondSection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Manas Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                    <li><a href="https://manaskulkarni.site/">Visite my Second website</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi I am <span class="purple">Manas</span></div>
+                <div>And I am passionate</div>
+                <div>Web Devloper</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="manas kulkarni cv.pdf" target="_blank">
+                    <button class="btn">Download Resume</button></a>
+
+                    <a href="https://github.com/mdkulkarni2005" target="_blank">
+                    <button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img style="height: 818px; width: 772px; " src="model_bw-removebg-preview.jpg" alt="">
+            </div>
+        </section>
+
+
+        <!-- github -->
+
+
+        <section id="projects">
+            <h1>Projects</h1>
+
+            <div class="project-card">
+                <h3>Jarvis</h3>
+                <p>Jarvis is python base AI assistent Its works on voice</p>
+            </div>
+            <div class="github-button">
+                <a href="https://github.com/mdkulkarni2005/jarvis-python-ai" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Chat-gpt Clone</h3>
+                <p>Chat-gpt Clone is python base project.</p>
+            </div>
+            <div class="github-button">
+                <a href="https://github.com/mdkulkarni2005/Chat-gpt-Clone" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Stock-Magnament-website(App)</h3>
+                <p>Stock-Management App. is make using the help of mongodb. In this app you can monotor your inventry</p>
+            </div>
+            <div class="github-button">
+                <a href="https://github.com/mdkulkarni2005" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>My Second Website</h3>
+                <p>This is my second website. This website made up of HTML, CSS, JAVASCRIPT</p>
+            </div>
+            <div class="github-button">
+                <a href="https://manaskulkarni.site/" target="_blank">View My Website</a>
+            </div>
+        </section>
+        <h2>More Project are Coming Soon</h2>
+
+
+        <div>
+            <p class="copyright">Copyright © <!-- -->2023<!-- --> Manas Kulkarni<!-- --></p>
+        </div>
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hi', 'My Name Is Manas', 'And I Am ', 'Web Developer', 'Graphic Designer.', 'Python Developer', 'Java Expert'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
